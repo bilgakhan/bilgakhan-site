@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bilgakhan" />
+    <meta
+      name="description"
+      content="bilgakhan.uz - shaxsiy fikrlar va texnologik postlar"
+    />
+    <meta
+      name="keywords"
+      content="K2K38, 2038, year 2038, 2038-yil muammosi, 32 bitli tizim, 64 bitli tizim, unix, anvar alimov, anvar imonov, bilgakhan, symfony, linux"
+    />
+    <meta property="og:title" content="BILGAKHAN.UZ" />
+    <meta
+      property="og:description"
+      content="Shaxsiy fikrlar va texnologik postlar"
+    />
+    <meta
+      property="og:url"
+      content="https://bilgakhan.uz/pages/blogs/blog.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Additional Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+
+    <!-- Title -->
+    <title>Y2K38 Muammosi | Bilgakhan</title>
+  </head>
+  <body style="background-color: #222; color: white">
+    <!-- Navbar start -->
+    <header>
+      <nav>
+        <a href="/" class="root">Bilgakhan</a>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="/">Asosiy</a>
+            </li>
+            <li>
+              <a href="#" style="color: #cacaca">❇️ Bloglar</a>
+            </li>
+            <li>
+              <a href="./pages/404.html">Loyihalar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr style="margin: 20px auto" />
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Main Start -->
+    <main>
+      <h1>K2K38 - 2038 yil vaqt muammosi</h1>
+      <figure>
+        <img src="../../assets/images/y2k38.gif" alt="" />
+        <figcaption style="color: #909090; text-align: center">
+          <a
+            id="link"
+            href="https://uz.wikipedia.org/wiki/2038-yilgi_vaqt_muammosi#/media/Fayl:Year_2038_problem.gif"
+            target="_blank"
+            >wikipedia.org</a
+          >'dan olindi
+        </figcaption>
+      </figure>
+      <p class="text">
+        Y2K38 muammosi (yoki 2038 muammosi) — bu 2038 yilning 19-yanvarida Unix
+        va Unixga asoslangan tizimlar uchun vaqtni saqlash usuli bilan bog'liq
+        muammo. Ushbu muammo, Unix tizimlarida vaqtni saqlash uchun 32-bitli
+        butun sonlardan foydalanilishi bilan bog'liq. <br /><br />
+
+        Muammo nima?<br />
+
+        Unix tizimlari vaqtni 1970 yilning 1-yanvaridan boshlab sekundlar
+        sifatida hisoblaydi. 32-bitli butun sonlar 2,147,483,647 sekundgacha
+        (taxminan 68 yil) vaqtni ifodalashi mumkin. Bu raqam 2038 yilning
+        19-yanvarida tugaydi. Ushbu sanadan keyin vaqt manzilini hisoblashda
+        xatoliklar yuzaga kelishi mumkin, bu esa tizimlar va dasturlarning
+        ishlashida muammolarni keltirib chiqaradi. <br /><br />
+
+        Y2K38 muammosi quyidagi oqibatlarga olib kelishi mumkin: <br />
+        1. Dasturiy ta'minot nosozliklari: Dasturlar vaqtni noto'g'ri
+        hisoblashga olib kelishi va nosozliklarga sabab bo'lishi mumkin. <br />
+        2. Ma'lumotlar yo'qolishi: Vaqtni saqlashda xatoliklar, ma'lumotlar
+        bazasidagi ma'lumotlarning yo'qolishi yoki noto'g'ri ishlashiga olib
+        kelishi mumkin. <br />
+        3. Kerakli tizimlarni yangilash ehtiyoji: Ko'plab tizimlar va
+        dasturlarni yangilash zarur bo'ladi, bu esa katta xarajatlarni talab
+        qilishi mumkin. <br /><br />
+
+        Y2K38 muammosini hal qilish uchun bir nechta yechimlar mavjud: <br />
+        1. 64-bitli tizimlarga o'tish: 64-bitli butun sonlar yordamida vaqtni
+        saqlash, 2038 yildan keyingi vaqtni hisoblashga imkon beradi. <br />
+        2. Dasturlarni yangilash: Dasturiy ta'minot ishlab chiqaruvchilari o'z
+        dasturlarini yangilab, muammoni oldini olishlari kerak. <br />
+        3. Test va monitoring: Tizimlar va dasturlarni 2038 yilga qadar sinovdan
+        o'tkazish va monitoring qilish. <br />
+
+        <br />
+        <span style="padding: 5px 50px 5px 5px; background-color: #333">
+          <span style="color: rgb(119, 119, 255)">date</span> +%s
+        </span>
+        <br /><br />
+        ushbu buyruqni bir yurgazib ko'rsangiz (linuxda!) 1970-yil 1-yanvardan
+        boshlab qancha sekund o'tganini ko'rasiz... oz qolibdiya 😁... <br />
+      </p>
+    </main>
+    <!-- Main End -->
+
+    <!-- Fixed Footer Start -->
+    <div class="footer">
+      <a href="https://t.me/anvarcodes" target="_blank">
+        <div class="social-links">
+          <i class="ri-telegram-2-line"> </i>Telegram
+        </div>
+      </a>
+      <a href="https://github.com/bilgakhan" target="_blank">
+        <div class="social-links"><i class="ri-github-line"> </i>GitHub</div>
+      </a>
+      <a href="mailto:anvarcodes@gmail.com" target="_blank">
+        <div class="social-links"><i class="ri-mail-line"> </i>Email</div>
+      </a>
+    </div>
+    <!-- Fixed Footer End -->
+  </body>
+</html>
