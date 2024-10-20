@@ -133,3 +133,21 @@ main img {
 .footer i {
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer,
+  main,
+  header {
+    width: 90%;
+  }
+
+  header .menu {
+    width: 45%;
+  }
+}
