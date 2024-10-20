@@ -22,8 +22,9 @@ header nav {
 }
 
 header .root {
+  text-decoration: none;
   font-size: 1.8rem;
-  color: #a169ef;
+  color: #e0b1ff;
 }
 
 header .menu {
@@ -68,7 +69,7 @@ main img {
 }
 
 .text {
-  margin: 30px auto;
+  margin: 30px auto auto auto;
   text-align: justify;
   font-size: 1.1rem;
   line-height: 2rem;
@@ -86,8 +87,27 @@ main img {
   transition-duration: 0.5s;
 }
 
+.blackquote {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-left: 5px solid #333;
+  margin: 20px 0;
+  font-style: italic;
+}
+.blackquote p {
+  margin: 0;
+}
+.blackquote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: #ccc;
+}
+
 .footer {
-  margin: 0px auto;
+  margin: 2rem auto;
   width: 70%;
   height: 60px;
   border: 1px solid #fff;
