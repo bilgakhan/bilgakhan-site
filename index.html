@@ -1,107 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
-    <meta name="author" content="Anvar Bilgakhan" />
-    <meta
-      name="keywords"
-      content="Anvar Alimov, bilgakhan, anvar bilgakhan, php, symfony, Anvar Imonov"
-    />
-    <meta name="description" content="Bilgakhan's personal web site" />
-    <meta property="og:title" content="Anvar Imonov" />
-    <meta property="og:description" content="PHP Forever!" />
-    <meta property="og:image" content="assets/images/meta.jpg" />
-    <meta property="og:url" content="https://www.bilgakhan.uz" />
-    <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anvar - Bilgakhan</title>
-    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Additional Libraries -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Title -->
+    <title>Bilgakhan's Diary</title>
   </head>
-  <body>
-    <div class="container">
-      <!-- navbar start -->
-      <div class="nav">
-        <div class="title">Bilgakhan</div>
+  <body style="background-color: #222; color: white">
+    <!-- Navbar start -->
+    <header>
+      <nav>
+        <div class="root">Bilgakhan</div>
         <div class="menu">
           <ul>
             <li>
-              <a href="https://bilgakhan.uz/" id="currentPage"
-                >❇️ Men Haqimda</a
-              >
+              <a href="#" style="color: #cacaca">❇️ Asosiy</a>
             </li>
-            <li><a href="./pages/blog.html">Blog</a></li>
+            <li>
+              <a href="#">Bloglar</a>
+            </li>
+            <li>
+              <a href="#">Loyihalar</a>
+            </li>
           </ul>
         </div>
-      </div>
-      <!-- navbar end -->
-      <hr />
-      <!-- about me start -->
+      </nav>
+      <hr style="margin: 20px auto" />
+    </header>
+    <!-- Navbar end -->
 
-      <div class="about-me">
-        <center>
-          <h1 id="title">Anvar</h1>
-          <br />
-          <img src="./assets/images/profile.png" alt="Rasm bor edi" />
-        </center>
-        <br />
+    <!-- Main Start -->
+    <main>
+      <h1>Men Haqimda</h1>
+      <figure>
+        <img src="assets/images/image.jpeg" alt="" />
+        <figcaption style="color: #909090; text-align: center">
+          <a id="link" href="https://pexels.com" target="_blank">pexels.com</a
+          >'dan olindi
+        </figcaption>
+      </figure>
 
-        <p id="about-me">
-          Assalomu aleykum 👋, men Anvar - O‘zbekistonlik 🇺🇿 dasturiy ta’minot
-          muhandisiman. <br /><br />
-          O'zim haqimda ozgina aytib bersam. Men 2005 yil Toshkent viloyati
-          Oqqo'rg'on tumanida tug'ulganman. O'zimizni qishloqdagi 3-maktabda
-          o'qishni boshlab tumandagi eng yaxshi maktablardan biri hisoblangan
-          49-maktabni tugatganman. <br /><br />
-          Hozirda Toshkent shahridagi Xalqaro Nordik Universiteti 👨🏼‍🎓 1-kurs
-          Kompyuter muhandisligi talabasiman. <br /><br />
-          Hammasi 2018-yilda dadamni birinchi marta menga noutbuk olib
-          berishadan boshlangan. O'sha paytda bu meni hayotimni o'zgartirishini
-          hech ham kutmaganman. <br /><br />
-          IT'ga kirib kelishimga esa 2020 yildagi Covid Pandemiyasi sabab bo'ldi
-          deya olaman. Shu yili men o'zbek IT sferasidagi
-          <a
-            href="https://azimjon.com"
-            target="_blank"
-            style="text-decoration: underline; color: white"
-            >Azimjon Po'latov</a
-          >
-          va
-          <a
-            href="https://kadirov.dev"
-            target="_blank"
-            style="text-decoration: underline; color: white"
-            >Akmal Kadirov</a
-          >
-          singari dasturchilarning YouTube va tarmoqlardagi sahifasini kuzatib
-          boshlang'ich IT bilimlarini o'rganishni boshlaganman va nasib qilgan
-          ekan shu yil (2024)dan boshlab Kadirov.dev online akademiyasida
-          o'qishni boshladim.<br /><br />
+      <p class="text">
+        Assalomu aleykum 👋, mening ismim Anvar.<br /><br />
+        O'zim haqimda ozgina aytib bersam. Men 2005 yil 🇺🇿 Toshkent viloyati
+        Oqqo'rg'on tumanida tug'ulganman. Qishlog'imdagi 3-maktabda o'qishni
+        boshlab tumandagi eng yaxshi maktablardan biri hisoblangan 49-maktabni
+        tugatganman. <br /><br />
+        Hozirda Toshkent shahridagi Xalqaro Nordik Universiteti 👨🏼‍🎓 1-kurs
+        Kompyuter muhandisligi talabasiman. <br /><br />
+        Hammasi 2018-yilda dadamni birinchi marta menga noutbuk olib berishadan
+        boshlangan. O'sha paytda bu meni hayotimni o'zgartirishini hech ham
+        kutmaganman. <br /><br />
+        IT'ga kirib kelishimga esa 2020 yildagi Covid Pandemiyasi sabab bo'ldi
+        deya olaman. Shu yili men o'zbek IT sferasidagi
+        <a
+          href="https://azimjon.com"
+          target="_blank"
+          style="text-decoration: underline; color: white"
+          >Azimjon Po'latov</a
+        >
+        va
+        <a
+          href="https://kadirov.dev"
+          target="_blank"
+          style="text-decoration: underline; color: white"
+          >Akmal Kadirov</a
+        >
+        singari dasturchilarning YouTube va tarmoqlardagi sahifasini kuzatib
+        boshlang'ich IT bilimlarini o'rganishni boshlaganman va nasib qilgan
+        ekan shu yil (2024)dan boshlab Kadirov.dev online akademiyasida o'qishni
+        boshladim.<br /><br />
 
-          Hozirda Symfony (PHP) va VueJS (JavaScript) frameworklarini
-          o'rganmoqdaman. <br /><br />
-        </p>
+        Hozirda Symfony (PHP) va VueJS (JavaScript) frameworklarini
+        o'rganmoqdaman. <br /><br />
+      </p>
+    </main>
+    <!-- Main End -->
 
-        <div class="quote">
-          <i style="color: #d5b8ff"
-            >"Faqat ikki xil til bor: odamlar shikoyat qiladigan tillar va hech
-            kim ishlatmaydigan tillar"</i
-          >
-          - Bjarne Stroustrup, C++ tili asoschisi
-        </div>
-      </div>
-
-      <!-- about me start -->
-
+    <!-- Fixed Footer Start -->
+    <div class="footer">
       <a href="https://t.me/anvarcodes" target="_blank">
-        <div class="footer-menu">
-          <i class="fa-brands fa-telegram"></i>
-          <h1>Telegram Kanalimga obuna bo'ling</h1>
+        <div class="social-links">
+          <i class="ri-telegram-2-line"> </i>Telegram
         </div>
       </a>
+      <a href="https://github.com/bilgakhan" target="_blank">
+        <div class="social-links"><i class="ri-github-line"> </i>GitHub</div>
+      </a>
+      <a href="mailto:anvarcodes@gmail.com" target="_blank">
+        <div class="social-links"><i class="ri-mail-line"> </i>Email</div>
+      </a>
     </div>
+    <!-- Fixed Footer End -->
   </body>
 </html>
