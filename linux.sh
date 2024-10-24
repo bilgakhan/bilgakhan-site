@@ -24,5 +24,5 @@ cd ../;
 rm -r tmp;
 clear;
 figlet -f slant Bilgakhan;
-echo 'Composer o'rnatildi...';
+echo "Composer o'rnatildi...";
 
